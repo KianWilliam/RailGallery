@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="module" version="3.x" client="site" method="upgrade">
+<name>Rail Gallery</name>
+<author>Kian William Nowrouzian</author>
+<creationDate>Jan 1, 2015</creationDate>
+<copyright>Copyright© 2014 Kian William Nowrouzian</copyright>
+<license>GNU General Public License version 3 ; see COPYING.txt</license>
+<authorEmail>mezmer121@gmail.com</authorEmail>
+<authorUrl>http://www.lord121.ir</authorUrl>
+<version>1.0.0</version>
+<description><![CDATA[<div style="background:#e71e9e; width:300px;font-weight:bold; font-style:normal; color:#fcfafb;">Welcome to RailGallery . Enjoy! </div>]]></description>
+<files>
+	<filename>mod_railgallery.xml</filename>
+	<filename module="mod_railgallery">mod_railgallery.php</filename>
+	<filename>helper.php</filename>
+	<filename>index.html</filename>
+	<filename>tmpl/default.php</filename>
+	<filename>tmpl/index.html</filename>
+	<filename>css/mystyles.css</filename>
+	<filename>css/index.html</filename>
+	<filename>js/jquery.js</filename>
+	<filename>js/rgallery.js</filename>
+	<filename>js/index.html</filename>
+	<folder>images</folder>
+	<folder>elements</folder>
+</files>
+<languages folder="language">
+<language tag="en-GB">en-GB.mod_railgallery.ini</language>
+<language tag="en-GB">en-GB.mod_railgallery.sys.ini</language>
+</languages>
+<config>
+<fields name="params">
+	<fieldset name="basic">
+		<field type="text" name="txtW" label="MOD_WIDTH_LABEL" description="MOD_WIDTH_DESC" filter="integer"   />
+		<field type="text" name="txtH" label="MOD_HEIGHT_LABEL" description="MOD_HEIGHT_DESC" filter="integer" />
+		<field type="color" name="clr" label="MOD_COLOR_LABEL" description="MOD_COLOR_DESC"  />
+		<field type="text" name="tm" label="MOD_SPEED_LABEL" description="MOD_SPEED_DESC" filter="integer" />
+		<field type="list" name="styleFont" label="MOD_STYLE_LABEL" description="MOD_STYLE_DESC">
+			<option value="0">Normal</option>
+			<option value="1">Bold</option>
+			<option value="2">Italic</option>
+			<option value="3">Bold-Italic</option>
+		</field>
+	  <field type="text" name="myFontFamily" label="MOD_FONT_FAMILY_LABEL" description="MOD_FONT_FAMILY_DESC" filter="raw"   />
+	  <field name="lib" type="list" label="MOD_LIB_LABEL" description="MOD_LIB_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+	  </field>
+	</fieldset>
+	
+	<fieldset name="slides" addfieldpath="/modules/mod_railgallery/elements">
+		<field  name="slides" type="myslidesmanager" label="MOD_MODAL_LABEL" description="MOD_MODAL_DESC" filter="raw" default="[{}]"/>
+	</fieldset>
+	
+		
+	
+</fields>
+</config>
+</extension>
