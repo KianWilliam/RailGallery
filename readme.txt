@@ -8,7 +8,7 @@ divisble to both 12 and 3.
 Also when you make the gallery manual, by clicking on each small image,
 the whole gallery shall be moved like a train on its rail.
 you may download the module at:
-http://www.myextenstions.lord121.ir/railg.html
+http://www.extensions.lord121.ir/railgallery-download.html
 In case of any problem contact me at:
 mezmer121@gmail.com
 long live science.
